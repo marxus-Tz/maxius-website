@@ -23,11 +23,9 @@
                 <div class="heading">
                     <h2>Special Skills</h2>
                 </div>
-
-                {% if IndexBody %}
-
                 <div class="row">
-                    {% for body in IndexBody%}   
+                {% if IndexBody %}
+                {% for body in IndexBody %}   
                     <div class="col-md-4">
                         <div class="card special-skill-item border-0">
                             <div class="card-header bg-transparent border-0"><i class="icon ion-ios-star-outline">{{ body.icon }}</i></div>
@@ -37,11 +35,10 @@
                             </div>
                         </div>
                     </div>
-                    {% endfor %}
-                
                 </div>
-                {% else %}
-                <p class="text-center">content will be added soon.....</p>
+                {% endfor %}
+              
+               
                 {% endif %}
 
             </div>

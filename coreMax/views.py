@@ -4,7 +4,8 @@ from .models import Project, Work, Education, Contact, Skills, Hobbies, IndexBod
 # Create your views here.
 def index(request):
     context={
-        
+        'IndexBody':IndexBody.objects.all()
+         
     }
     return render(request, 'index.html',{'title':'homepage'})
 
